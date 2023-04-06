@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorContent" maxHeight="869.0" maxWidth="921.0" minHeight="869.0" minWidth="921.0" prefHeight="869.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend.AdminController">
+   <children>
+      <TabPane layoutX="1.0" prefHeight="869.0" prefWidth="921.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Services">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="921.0" />
+            </content>
+          </Tab>
+          <Tab text="Lits">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txt" layoutX="370.0" layoutY="239.0" promptText="idlit" />
+                        <Button fx:id="D" layoutX="181.0" layoutY="338.0" mnemonicParsing="false" onAction="#Dt" text="Delete" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Dispositifs Médicaux">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Ambulances">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Utilisateurs">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="762.0" />
+               </content>
+            </Tab>
+            <Tab text="Batiment">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="762.0">
+                     <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                           <children>
+                              <ButtonBar layoutX="94.0" layoutY="64.0" prefHeight="40.0" prefWidth="200.0" />
+                              <TextField fx:id="t1" layoutX="204.0" layoutY="188.0" />
+                              <Button fx:id="b1" layoutX="235.0" layoutY="88.0" mnemonicParsing="false" onAction="#add" prefHeight="33.0" prefWidth="103.0" text="Button" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
